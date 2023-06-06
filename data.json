@@ -1,0 +1,244 @@
+{
+    "destinations": [
+      {
+      "id": 1,
+      "title": "Cancun",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "image": "/cancun.jpg",
+      "category": "playa",
+      "favorite": false,
+      "score": [1,2,3,4],
+      "comments": [
+        {
+          "user": "Eva", 
+          "comment": "bulde chulita la playa"
+        },
+        {
+          "user": "Eva Cristina", 
+          "comment": "no me gusto pesimo servicio"
+        } 
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "New york",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "image": "/nyc.jpg",
+      "score": 1,
+      "category": "ciudad",
+      "favorite": false,
+      "comments": [
+        {
+          "user": "Eva", 
+          "comment": "bulde chulita la playa"
+        },
+        {
+          "user": "Eva Cristina", 
+          "comment": "no me gusto pesimo servicio"
+        } 
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Southampton",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "image": "/southampton.jpg",
+      "score": 1,
+      "category": "pueblo",
+      "favorite": false,
+      "comments": [
+        {
+          "user": "Paola", 
+          "comment": "super chill"
+        },
+        {
+          "user": "Cristina", 
+          "comment": "calido"
+        } 
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Bariloche",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "image": "/bariloche.jpg",
+      "score": 1,
+      "category": "montana",
+      "favorite": false,
+      "comments": [
+        {
+          "user": "enmanuel", 
+          "comment": "mi nuevo destino favorito"
+        },
+        {
+          "user": "Evaluna", 
+          "comment": "hermoso en cualquier estacion"
+        } 
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Bariloche",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "image": "/bariloche.jpg",
+      "score": 1,
+      "category": "montana",
+      "favorite": false,
+      "comments": [
+        {
+          "user": "enmanuel", 
+          "comment": "mi nuevo destino favorito"
+        },
+        {
+          "user": "Evaluna", 
+          "comment": "hermoso en cualquier estacion"
+        } 
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Bariloche",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "image": "/bariloche.jpg",
+      "score": 1,
+      "category": "montana",
+      "favorite": false,
+      "comments": [
+        {
+          "user": "enmanuel", 
+          "comment": "mi nuevo destino favorito"
+        },
+        {
+          "user": "Evaluna", 
+          "comment": "hermoso en cualquier estacion"
+        } 
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Bariloche",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "image": "/bariloche.jpg",
+      "score": 1,
+      "category": "montana",
+      "favorite": false,
+      "comments": [
+        {
+          "user": "enmanuel", 
+          "comment": "mi nuevo destino favorito"
+        },
+        {
+          "user": "Evaluna", 
+          "comment": "hermoso en cualquier estacion"
+        } 
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Bariloche",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "image": "/bariloche.jpg",
+      "score": 1,
+      "category": "montana",
+      "favorite": false,
+      "comments": [
+        {
+          "user": "enmanuel", 
+          "comment": "mi nuevo destino favorito"
+        },
+        {
+          "user": "Evaluna", 
+          "comment": "hermoso en cualquier estacion"
+        } 
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    }
+  ]
+  }
