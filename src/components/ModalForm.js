@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from "react";
-
+import data from "../../data.json";
 
 const Modal = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
@@ -8,18 +8,43 @@ const Modal = ({ isOpen, onClose }) => {
   const [images, setImages] = useState([]);
 
   const handleSubmit = (e) => {
-
     e.preventDefault();
       const fileArray = Array.from(images).map((file) => ({
-        image: file.name,
+        image: '/'+file.name,
     }));
-    
+
+    const lastEl = data.destinations[data.destinations.length - 1]
+
     const newDestination = {
-      name,
+      id: lastEl.id ++,
+      title: name,
       description,
-      images:[fileArray]
+      image: '/'+fileArray[0].image,
+      images: fileArray
     }
+    console.log(newDestination)
+    data.destinations.push(newDestination);
+
+    saveDataToJson(data)
+
     onClose();
+  };
+
+  const saveDataToJson = async (data) => {
+    try {
+      const response = await fetch('/api/saveDataToJson', {
+        method: 'POST',
+        body: JSON.stringify(data)
+      });
+  
+      if (response.ok) {
+        console.log('Datos guardados en el archivo JSON.');
+      } else {
+        console.error('Error al guardar los datos en el archivo JSON.');
+      }
+    } catch (error) {
+      console.error('Error al guardar los datos en el archivo JSON:', error);
+    }
   };
 
   if (!isOpen) return null;

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import data from "../../data.json";
 import React, { useEffect, useState } from 'react';
+import GoBackArrow from "./GoBackArrow";
 import 'tailwindcss/tailwind.css';
 
 
@@ -31,6 +32,7 @@ const CardDetail = ({ id }) => {
 
   return (
   <div className="bg-gray min-h-screen flex justify-center items-center">
+    <GoBackArrow />
     {selectedDestination && (
       <div className="bg-background p-10 rounded-md shadow-lg">
         <div className="mb-4">
@@ -62,14 +64,18 @@ const CardDetail = ({ id }) => {
 
         <div className="mt-8">
           <h2 className="text-xl font-bold mb-2">Comments</h2>
-          <ul>
-            {selectedDestination.comments.map((comment, index) => (
-              <li key={`comment-${index}`} className="mb-4">
-                <p className="font-bold">{comment.user}</p>
-                <p>{comment.comment}</p>
-              </li>
-            ))}
-          </ul>
+          {selectedDestination.comments && selectedDestination.comments.length > 0 ? (
+            <ul>
+              {selectedDestination.comments.map((comment, index) => (
+                <li key={`comment-${index}`} className="mb-4">
+                  <p className="font-bold">{comment.user}</p>
+                  <p>{comment.comment}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No comments available</p>
+          )}
         </div>
       </div>
     )}

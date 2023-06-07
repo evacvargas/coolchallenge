@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Nav = () => {
   return (
-  <div className="h-28 p-9 bg-white">
+  <div className="fixed top-0 left-0 w-full h-28 p-9 z-[100] bg-background">
       <div className="flex justify-between">
         <div>
           <Image

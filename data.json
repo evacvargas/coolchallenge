@@ -1,22 +1,27 @@
 {
-    "destinations": [
-      {
+  "destinations": [
+    {
       "id": 1,
       "title": "Cancun",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
       "image": "/cancun.jpg",
       "category": "playa",
       "favorite": false,
-      "score": [1,2,3,4],
+      "score": [
+        1,
+        2,
+        3,
+        4
+      ],
       "comments": [
         {
-          "user": "Eva", 
+          "user": "Eva",
           "comment": "bulde chulita la playa"
         },
         {
-          "user": "Eva Cristina", 
+          "user": "Eva Cristina",
           "comment": "no me gusto pesimo servicio"
-        } 
+        }
       ],
       "images": [
         {
@@ -40,13 +45,13 @@
       "favorite": false,
       "comments": [
         {
-          "user": "Eva", 
+          "user": "Eva",
           "comment": "bulde chulita la playa"
         },
         {
-          "user": "Eva Cristina", 
+          "user": "Eva Cristina",
           "comment": "no me gusto pesimo servicio"
-        } 
+        }
       ],
       "images": [
         {
@@ -70,13 +75,13 @@
       "favorite": false,
       "comments": [
         {
-          "user": "Paola", 
+          "user": "Paola",
           "comment": "super chill"
         },
         {
-          "user": "Cristina", 
+          "user": "Cristina",
           "comment": "calido"
-        } 
+        }
       ],
       "images": [
         {
@@ -100,13 +105,13 @@
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel", 
+          "user": "enmanuel",
           "comment": "mi nuevo destino favorito"
         },
         {
-          "user": "Evaluna", 
+          "user": "Evaluna",
           "comment": "hermoso en cualquier estacion"
-        } 
+        }
       ],
       "images": [
         {
@@ -130,13 +135,13 @@
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel", 
+          "user": "enmanuel",
           "comment": "mi nuevo destino favorito"
         },
         {
-          "user": "Evaluna", 
+          "user": "Evaluna",
           "comment": "hermoso en cualquier estacion"
-        } 
+        }
       ],
       "images": [
         {
@@ -160,13 +165,13 @@
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel", 
+          "user": "enmanuel",
           "comment": "mi nuevo destino favorito"
         },
         {
-          "user": "Evaluna", 
+          "user": "Evaluna",
           "comment": "hermoso en cualquier estacion"
-        } 
+        }
       ],
       "images": [
         {
@@ -190,13 +195,13 @@
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel", 
+          "user": "enmanuel",
           "comment": "mi nuevo destino favorito"
         },
         {
-          "user": "Evaluna", 
+          "user": "Evaluna",
           "comment": "hermoso en cualquier estacion"
-        } 
+        }
       ],
       "images": [
         {
@@ -211,7 +216,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Bariloche",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
       "image": "/bariloche.jpg",
@@ -220,13 +225,13 @@
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel", 
+          "user": "enmanuel",
           "comment": "mi nuevo destino favorito"
         },
         {
-          "user": "Evaluna", 
+          "user": "Evaluna",
           "comment": "hermoso en cualquier estacion"
-        } 
+        }
       ],
       "images": [
         {
@@ -241,4 +246,4 @@
       ]
     }
   ]
-  }
+}

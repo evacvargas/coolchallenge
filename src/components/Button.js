@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import React from "react";
 
 const Button = ({
@@ -13,16 +12,3 @@ const Button = ({
   </button>
 );
 export default Button;
-
-// Button.defaultProps = {
-//   small: false,
-//   type: 'primary',
-//   onclick: () => {},
-// };
-
-// Button.propTypes = {
-//   small: PropTypes.bool,
-//   type: PropTypes.oneOf(['primary', 'secondary-outline']),
-//   children: PropTypes.any.isRequired,
-//   onclick: PropTypes.func,
-// };
