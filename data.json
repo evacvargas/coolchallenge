@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Cancun",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "image": "/cancun.jpg",
+      "mainimage": "/cancun.jpg",
       "category": "playa",
       "favorite": false,
       "score": [
@@ -39,7 +39,7 @@
       "id": 2,
       "title": "New york",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "image": "/nyc.jpg",
+      "mainimage": "/nyc.jpg",
       "score": 1,
       "category": "ciudad",
       "favorite": false,
@@ -69,7 +69,7 @@
       "id": 3,
       "title": "Southampton",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "image": "/southampton.jpg",
+      "mainimage": "/southampton.jpg",
       "score": 1,
       "category": "pueblo",
       "favorite": false,
@@ -99,7 +99,7 @@
       "id": 4,
       "title": "Bariloche",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "image": "/bariloche.jpg",
+      "mainimage": "/bariloche.jpg",
       "score": 1,
       "category": "montana",
       "favorite": false,
@@ -129,7 +129,7 @@
       "id": 5,
       "title": "Bariloche",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "image": "/bariloche.jpg",
+      "mainimage": "/bariloche.jpg",
       "score": 1,
       "category": "montana",
       "favorite": false,
@@ -159,7 +159,7 @@
       "id": 6,
       "title": "Bariloche",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "image": "/bariloche.jpg",
+      "mainimage": "/bariloche.jpg",
       "score": 1,
       "category": "montana",
       "favorite": false,
@@ -189,7 +189,37 @@
       "id": 7,
       "title": "Bariloche",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "image": "/bariloche.jpg",
+      "mainimage": "/bariloche.jpg",
+      "score": 1,
+      "category": "montana",
+      "favorite": false,
+      "comments": [
+        {
+          "user": "enmanuel",
+          "comment": "mi nuevo destino favorito"
+        },
+        {
+          "user": "Evaluna",
+          "comment": "hermoso en cualquier estacion"
+        }
+      ],
+      "images": [
+        {
+          "image": "/cancun-varias.jpg"
+        },
+        {
+          "image": "/cancun-varias-1.jpg"
+        },
+        {
+          "image": "/cancun-varias-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Bariloche",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "mainimage": "/bariloche.jpg",
       "score": 1,
       "category": "montana",
       "favorite": false,
@@ -217,33 +247,20 @@
     },
     {
       "id": 9,
-      "title": "Bariloche",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "image": "/bariloche.jpg",
-      "score": 1,
-      "category": "montana",
-      "favorite": false,
-      "comments": [
-        {
-          "user": "enmanuel",
-          "comment": "mi nuevo destino favorito"
-        },
-        {
-          "user": "Evaluna",
-          "comment": "hermoso en cualquier estacion"
-        }
-      ],
+      "title": "Mendoza",
+      "description": "LADFFIOFJAIAHFJSKDNCJKNSKJCNSKJFDNFKJSNFJKFBJWRH",
+      "mainimage": "/cancun-varias-2.jpg",
       "images": [
-        {
-          "image": "/cancun-varias.jpg"
-        },
-        {
-          "image": "/cancun-varias-1.jpg"
-        },
         {
           "image": "/cancun-varias-2.jpg"
         }
       ]
+    },
+    {
+      "id": 10,
+      "title": "Mar del plata",
+      "description": "En argentina, la playa es fria ",
+      "images": []
     }
   ]
 }

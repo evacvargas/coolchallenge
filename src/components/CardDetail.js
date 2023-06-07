@@ -1,8 +1,8 @@
+'use client'
 import Image from "next/image";
 import data from "../../data.json";
 import React, { useEffect, useState } from 'react';
 import GoBackArrow from "./GoBackArrow";
-import 'tailwindcss/tailwind.css';
 
 
 const CardDetail = ({ id }) => {
@@ -31,31 +31,36 @@ const CardDetail = ({ id }) => {
   }, [id]);
 
   return (
-  <div className="bg-gray min-h-screen flex justify-center items-center">
-    <GoBackArrow />
+  <div className="min-h-screen flex justify-center items-center">
+    <GoBackArrow/>
+
     {selectedDestination && (
+      <div className="bg-gray p-9 w-2/3">
       <div className="bg-background p-10 rounded-md shadow-lg">
         <div className="mb-4">
           <h1 className="text-2xl font-bold mb-2">{selectedDestination.title}</h1>
           <p className="text-gray-700">{selectedDestination.description}</p>
         </div>
-        <div className="flex flex-wrap">
-          <div className="w-1/2">
+
+        <div className="flex flex-wrap h-80">
+          <div className="w-1/2 overflow-hidden h-full">
             <Image
-              src={selectedDestination.image}
+              src={selectedDestination.mainimage}
               alt={selectedDestination.title}
               width={400}
               height={300}
+              className="object-cover"
             />
           </div>
-          <div className="w-1/2">
+          <div className={`w-1/2 h-full grid grid-cols-${selectedDestination.images.length}`}>
             {selectedDestination.images.map((image, index) => (
               <div key={`image-${index}`} className="mb-4">
                 <Image
                   src={image.image}
                   alt="Image"
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
+                  className="object-cover"
                 />
               </div>
             ))}
@@ -77,6 +82,7 @@ const CardDetail = ({ id }) => {
             <p>No comments available</p>
           )}
         </div>
+      </div>
       </div>
     )}
   </div>

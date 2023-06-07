@@ -8,6 +8,10 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'xs': {'max': '639px'},
+      ...defaultTheme.screens,
+    },
       extend: {
         fontFamily: {
           'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
@@ -18,7 +22,8 @@ module.exports = {
         secondary: "#109460",
         background: "#e8e6e6",
         gray: "#1E232C",
-        hover: "#f2cac2"
+        hover: "#f2cac2",
+        white: "FFFFFF"
       }
   },
   plugins: [],

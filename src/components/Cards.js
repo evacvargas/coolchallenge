@@ -1,30 +1,23 @@
 'use client';
 import React from 'react';
-// import PropTypes from 'prop-types';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import Image from 'next/image';
 
 const Cards = ({
   image, description, title, id 
 }) => {
-  const router = useRouter();
-
-  const handleCardClick = ( ) => {
-    router.push(`/Details/${id}`);
-  };
 
   return (
     <>
-      <div className="rounded-lg bg-background h-72 flex flex-col hover:bg-hover transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"  
-      onClick={handleCardClick}
+      <Link href={`/details/${id}`} className="bg-background rounded-lg shadow-lg h-96 flex flex-col hover:bg-hover transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"  
       role="button"
       >
-        <div style={{ position: 'relative', width: '100%', height: '50%' }}>
+        <div style={{ position: 'relative', width: '100%', height: '60%' }}>
           <Image 
           src={image}
           alt={title}
           fill={true}
-          class="rounded-t-lg"
+          class="rounded-t-lg object-cover"
           />
         </div>
         <div className="flex flex-col gap-3 p-3">
@@ -35,23 +28,9 @@ const Cards = ({
             {description}
           </p>
         </div>
-      </div>
+      </Link>
     </>
   );
 }
-
-// Cards.defaultProps = {
-//   background: '',
-//   avatar: '',
-//   title: '',
-//   description: '',
-// };
-
-// Cards.propTypes = {
-//   background: PropTypes.string,
-//   avatar: PropTypes.string,
-//   title: PropTypes.string,
-//   description: PropTypes.string,
-// };
 
 export default Cards;

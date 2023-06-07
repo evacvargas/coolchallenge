@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import data from "../../data.json";
+import {RiCloseLine} from 'react-icons/ri';
 
 const Modal = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
@@ -13,16 +14,16 @@ const Modal = ({ isOpen, onClose }) => {
         image: '/'+file.name,
     }));
 
-    const lastEl = data.destinations[data.destinations.length - 1]
+    const lastId = data.destinations[data.destinations.length - 1]?.id || 0;
+    const newId = lastId + 1;
 
     const newDestination = {
-      id: lastEl.id ++,
+      id: newId,
       title: name,
       description,
-      image: '/'+fileArray[0].image,
+      mainimage: fileArray[0]?.image,
       images: fileArray
     }
-    console.log(newDestination)
     data.destinations.push(newDestination);
 
     saveDataToJson(data)
@@ -38,7 +39,9 @@ const Modal = ({ isOpen, onClose }) => {
       });
   
       if (response.ok) {
-        console.log('Datos guardados en el archivo JSON.');
+        setImages([])
+        setName('')
+        setDescription('');
       } else {
         console.error('Error al guardar los datos en el archivo JSON.');
       }
@@ -51,14 +54,15 @@ const Modal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div className="bg-background p-4 rounded-lg w-1/2">
+      <div className="absolute w-full bg-gray bg-opacity-30 h-full backdrop-blur z-1"/>
+      <div className="bg-background border border-gray p-5 rounded-lg z-50">
         <div className="flex justify-between mb-4">
           <h2 className="text-lg font-bold text-gray">Agrega tu destino</h2>
           <button
             className="text-gray hover:text-secondary"
             onClick={onClose}
           >
-            Cerrar
+            <RiCloseLine/>
           </button>
         </div>
         <form onSubmit={handleSubmit}>

@@ -1,13 +1,13 @@
 import React from 'react';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
+import {MdArrowBackIosNew} from 'react-icons/md';
 
 const GoBackArrow = () => {
-  const router = useRouter();
 
   return (
-    <button type="button" onClick={() => router.back()}>
-      ATRAS
-    </button>
+    <Link href={"/"}>
+      <MdArrowBackIosNew/>
+    </Link>
   );
 };
 

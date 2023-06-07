@@ -1,62 +1,22 @@
 'use client'
-import React, {useState} from "react";
+import React from "react";
 import Cards from "./Cards";
-import data from "../../data.json";
-import Button from "./Button";
-import ModalForm from "./ModalForm";
-import SearchBar from "./SearchBar";
 
 
-const CardsContainer = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [destinations, setDestinations] = useState(data.destinations);
-
-  const handleSearch = (newSearchTerm) => {
-    setSearchTerm(newSearchTerm);
-
-    if (!searchTerm || searchTerm == '') {
-      setDestinations(destinations);
-    }else{
-      const filteredDestinations = destinations.filter((destination) =>
-      destination.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setDestinations(filteredDestinations);
-    }
-  };
-  
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
+const CardsContainer = ({dest}) => {
 
   return (
-    <div className="flex flex-col-reverse py-24 px-24 bg-gray justify-center gap-14 align-middle h-screen">
-      <SearchBar onSearch={handleSearch}/>
-      <div className="max-w-4xl mx-auto grid gap-4 max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 box-border">
-        {destinations.map((destination) => (
+      <div className="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {dest.map((destination) => (
           <Cards
             key={destination.id}
             id={destination.id}
-            image={destination.image}
+            image={destination.mainimage}
             title={destination.title}
             description={destination.description}
           />
         ))}
       </div>
-      <div className="flex items-center justify-center mt-4">
-          <Button 
-          text="Agrega nuevo destino"
-          action={openModal}
-          />
-        <ModalForm isOpen={modalIsOpen} onClose={closeModal} />
-      </div>
-
-    </div>
   );
 }
   
