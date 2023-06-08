@@ -7,6 +7,8 @@ const Modal = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [images, setImages] = useState([]);
+  const [cost, setCost] = useState('');
+  const [address, setAddress] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,6 +23,8 @@ const Modal = ({ isOpen, onClose }) => {
       id: newId,
       title: name,
       description,
+      cost,
+      address,
       mainimage: fileArray[0]?.image,
       images: fileArray
     }
@@ -42,6 +46,8 @@ const Modal = ({ isOpen, onClose }) => {
         setImages([])
         setName('')
         setDescription('');
+        setCost('');
+        setAddress('');
       } else {
         console.error('Error al guardar los datos en el archivo JSON.');
       }
@@ -62,7 +68,7 @@ const Modal = ({ isOpen, onClose }) => {
             className="text-gray hover:text-secondary"
             onClick={onClose}
           >
-            <RiCloseLine/>
+            <RiCloseLine size="2rem"/>
           </button>
         </div>
         <form onSubmit={handleSubmit}>
@@ -86,6 +92,30 @@ const Modal = ({ isOpen, onClose }) => {
               id="descripcion"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
+              className="w-full p-2 border-gray border rounded"
+            />
+          </div>
+          <div className="mb-4">
+          <label htmlFor="direccion" className="block mb-1">
+              Direccion:
+            </label>
+            <input
+              type="text"
+              id="direccion"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              className="w-full p-2 border-gray border rounded"
+            />
+          </div>
+          <div className="mb-4">
+          <label htmlFor="cost" className="block mb-1">
+              Precio:
+            </label>
+            <input
+              type="text"
+              id="cost"
+              value={cost}
+              onChange={(e) => setCost(e.target.value)}
               className="w-full p-2 border-gray border rounded"
             />
           </div>

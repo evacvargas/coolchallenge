@@ -59,7 +59,7 @@ const Modal = ({ isOpen, onClose, id }) => {
       <div className="absolute w-full h-full z-0">
         <div className="bg-gray bg-opacity-30 h-full backdrop-blur" />
       </div>
-      <div className="bg-white p-4 shadow-md rounded-lg relative z-10">
+      <div className="bg-white p-4 shadow-md rounded-lg relative z-10 w-1/3">
         <h2 className="text-xl text-primary font-bold mb-4">Agregar comentario</h2>
         <form>
           <div className="mb-4">
@@ -83,7 +83,7 @@ const Modal = ({ isOpen, onClose, id }) => {
             />
             <p className="text-xs text-gray">{comment.length}/300 caracteres</p>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center gap-6">
             <Button
               action={onClose}
               bgColor="white"

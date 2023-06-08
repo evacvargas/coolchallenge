@@ -5,6 +5,7 @@ import SearchBar from '@/components/SearchBar'
 import Button from "@/components/Button";
 import Modal from "@/components/ModalForm";
 import data from "../../data.json";
+import CategoryFilter from "@/components/CategoryFilter";
 
 
 export default function Home() {
@@ -46,6 +47,9 @@ export default function Home() {
         textColor="background"
         />
         <Modal isOpen={modalIsOpen} onClose={closeModal} />
+      </div>
+      <div className="py-10 px-12">
+        <CategoryFilter/>
       </div>
       <div className="py-10 px-12">
         <CardsContainer dest={destinations}/>

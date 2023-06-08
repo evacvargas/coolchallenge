@@ -14,7 +14,8 @@ const CardsContainer = ({dest}) => {
             image={destination.mainimage}
             title={destination.title}
             score={destination.score}
-            direction={destination.direction}
+            address={destination.address}
+            cost={destination.cost}
           />
         ))}
       </div>

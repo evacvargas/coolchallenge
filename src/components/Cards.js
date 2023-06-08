@@ -7,12 +7,9 @@ import {BsFillStarFill} from "react-icons/bs"
 
 
 const Cards = ({
-  image, title, id, score, direction
+  image, title, id, score, address, cost
 }) => {
   const stars = [];
-
-  console.log(score)
-
   const calcScore = ()=> {
     if (score?.length === 0) {
       return 0;
@@ -50,7 +47,9 @@ const Cards = ({
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33.3vw"
           />
           <div className="absolute top-2 right-2">
-            <BsSuitHeartFill className="text-secondary text-2xl stroke-1 stroke-white" />
+            <BsSuitHeartFill
+              className="text-secondary text-2xl stroke-1 stroke-white"
+              />
           </div>
         </div>
         <div className="flex justify-between p-3 items-center text-gray font-semibold">
@@ -64,8 +63,8 @@ const Cards = ({
             ): null}
         </div>
         <div className="p-3 text-gray font-light">
-          <p>{direction}</p>
-          <p className="text-secondary font-semibold">100$</p>
+          <p>{address}</p>
+          <p className="text-secondary font-semibold">{cost + '$'}</p>
         </div>
       </Link>
     </>
