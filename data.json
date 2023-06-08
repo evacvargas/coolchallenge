@@ -2,10 +2,10 @@
   "destinations": [
     {
       "id": 1,
-      "title": "Cancun",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "mainimage": "/cancun.jpg",
-      "category": "playa",
+      "title": "Jardin Japones",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry",
+      "mainimage": "/jardinjapones.jpg",
+      "category": "parque",
       "favorite": false,
       "score": [
         1,
@@ -16,251 +16,245 @@
       "comments": [
         {
           "user": "Eva",
-          "comment": "bulde chulita la playa"
+          "comment": "Bello"
         },
         {
           "user": "Eva Cristina",
-          "comment": "no me gusto pesimo servicio"
+          "comment": "Amo Buenos Aires"
         }
       ],
       "images": [
         {
-          "image": "/cancun-varias.jpg"
+          "image": "/jardinjapones.jpg"
         },
         {
-          "image": "/cancun-varias-1.jpg"
+          "image": "/jardinjapones.jpg"
         },
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/jardinjapones.jpg"
         }
       ]
     },
     {
       "id": 2,
-      "title": "New york",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "mainimage": "/nyc.jpg",
+      "title": "Caminito",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry",
+      "mainimage": "/caminito.jpg",
       "score": 1,
       "category": "ciudad",
       "favorite": false,
       "comments": [
         {
           "user": "Eva",
-          "comment": "bulde chulita la playa"
+          "comment": "Lo mejor de buenos aires, volveria mil veces mas"
         },
         {
           "user": "Eva Cristina",
-          "comment": "no me gusto pesimo servicio"
+          "comment": "Lo mejor de buenos aires, volveria mil veces mas"
         }
       ],
       "images": [
         {
-          "image": "/cancun-varias.jpg"
+          "image": "/caminito.jpg"
         },
         {
-          "image": "/cancun-varias-1.jpg"
+          "image": "/caminito2.jpg"
         },
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/caminito3.jpg"
         }
       ]
     },
     {
       "id": 3,
-      "title": "Southampton",
+      "title": "Cerro Campanario",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "mainimage": "/southampton.jpg",
+      "mainimage": "/campanario.png",
       "score": 1,
-      "category": "pueblo",
+      "category": "montana",
       "favorite": false,
       "comments": [
         {
           "user": "Paola",
-          "comment": "super chill"
+          "comment": "Lo mejor de Argentina, volveria mil veces mas"
         },
         {
           "user": "Cristina",
-          "comment": "calido"
+          "comment": "Sublime"
         }
       ],
       "images": [
         {
-          "image": "/cancun-varias.jpg"
+          "image": "/campanario.png"
         },
         {
-          "image": "/cancun-varias-1.jpg"
+          "image": "/campanario.png"
         },
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/campanario.png"
         }
       ]
     },
     {
       "id": 4,
-      "title": "Bariloche",
+      "title": "Tigre",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "mainimage": "/bariloche.jpg",
+      "mainimage": "/tigre.jpeg",
       "score": 1,
       "category": "montana",
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel",
-          "comment": "mi nuevo destino favorito"
+          "user": "Enmanuel",
+          "comment": "Mi nuevo destino favorito"
         },
         {
           "user": "Evaluna",
-          "comment": "hermoso en cualquier estacion"
+          "comment": "Hermoso en cualquier estacion"
         }
       ],
       "images": [
         {
-          "image": "/cancun-varias.jpg"
+          "image": "/tigre.jpeg"
         },
         {
-          "image": "/cancun-varias-1.jpg"
+          "image": "/tigre.jpeg"
         },
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/tigre.jpeg"
         }
       ]
     },
     {
       "id": 5,
-      "title": "Bariloche",
+      "title": "Canaima",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "mainimage": "/bariloche.jpg",
+      "mainimage": "/canaima.png",
       "score": 1,
-      "category": "montana",
+      "category": "selva",
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel",
-          "comment": "mi nuevo destino favorito"
+          "user": "Maria",
+          "comment": "Mi nuevo destino favorito"
         },
         {
-          "user": "Evaluna",
-          "comment": "hermoso en cualquier estacion"
+          "user": "Sara",
+          "comment": "Imponente, la naturaleza me hizo volar"
         }
       ],
       "images": [
         {
-          "image": "/cancun-varias.jpg"
+          "image": "/canaima.png"
         },
         {
-          "image": "/cancun-varias-1.jpg"
+          "image": "/canaima.png"
         },
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/canaima.png"
         }
       ]
     },
     {
       "id": 6,
-      "title": "Bariloche",
+      "title": "Los Roques",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "mainimage": "/bariloche.jpg",
+      "mainimage": "/roques.jpeg",
       "score": 1,
-      "category": "montana",
+      "category": "playa",
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel",
-          "comment": "mi nuevo destino favorito"
+          "user": "Andrea",
+          "comment": "La mejor playa del universo"
         },
         {
-          "user": "Evaluna",
-          "comment": "hermoso en cualquier estacion"
+          "user": "Oscar",
+          "comment": "Simplemente hermoso"
         }
       ],
       "images": [
         {
-          "image": "/cancun-varias.jpg"
+          "image": "/roques.jpeg"
         },
         {
-          "image": "/cancun-varias-1.jpg"
+          "image": "/roques.jpeg"
         },
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/roques.jpeg"
         }
       ]
     },
     {
       "id": 7,
-      "title": "Bariloche",
+      "title": "Fontana Di Trevi",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "mainimage": "/bariloche.jpg",
+      "mainimage": "/ditrevi.jpg",
       "score": 1,
-      "category": "montana",
+      "category": "ciudad",
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel",
-          "comment": "mi nuevo destino favorito"
+          "user": "Ema",
+          "comment": "Mi nuevo destino favorito"
         },
         {
-          "user": "Evaluna",
-          "comment": "hermoso en cualquier estacion"
+          "user": "Luna",
+          "comment": "Italia es espectacular"
         }
       ],
       "images": [
         {
-          "image": "/cancun-varias.jpg"
+          "image": "/ditrevi1.jpg"
         },
         {
-          "image": "/cancun-varias-1.jpg"
+          "image": "/ditrevi2.jpg"
         },
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/ditrevi3.jpg"
         }
       ]
     },
     {
       "id": 8,
-      "title": "Bariloche",
+      "title": "Torre Eiffel",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      "mainimage": "/bariloche.jpg",
+      "mainimage": "/paris.jpg",
       "score": 1,
       "category": "montana",
       "favorite": false,
       "comments": [
         {
-          "user": "enmanuel",
-          "comment": "mi nuevo destino favorito"
+          "user": "Camila",
+          "comment": "Mi nuevo destino favorito"
         },
         {
           "user": "Evaluna",
-          "comment": "hermoso en cualquier estacion"
+          "comment": "Romantica"
         }
       ],
       "images": [
         {
-          "image": "/cancun-varias.jpg"
+          "image": "/paris1.jpg"
         },
         {
-          "image": "/cancun-varias-1.jpg"
+          "image": "/paris2.jpg"
         },
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/paris2.jpg"
         }
       ]
     },
     {
       "id": 9,
-      "title": "Mendoza",
-      "description": "LADFFIOFJAIAHFJSKDNCJKNSKJCNSKJFDNFKJSNFJKFBJWRH",
-      "mainimage": "/cancun-varias-2.jpg",
+      "title": "London Eye",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry",
+      "mainimage": "/london.jpg",
       "images": [
         {
-          "image": "/cancun-varias-2.jpg"
+          "image": "/london2jpg"
         }
       ]
-    },
-    {
-      "id": 10,
-      "title": "Mar del plata",
-      "description": "En argentina, la playa es fria ",
-      "images": []
     }
   ]
 }

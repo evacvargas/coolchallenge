@@ -31,40 +31,39 @@ const CardDetail = ({ id }) => {
   }, [id]);
 
   return (
-  <div className="min-h-screen flex justify-center items-center">
-    <GoBackArrow/>
-
+  <div className="flex flex-row justify-center gap-8 mt-9 px-5">
     {selectedDestination && (
-      <div className="bg-gray p-9 w-2/3">
       <div className="bg-background p-10 rounded-md shadow-lg">
-        <div className="mb-4">
-          <h1 className="text-2xl font-bold mb-2">{selectedDestination.title}</h1>
-          <p className="text-gray-700">{selectedDestination.description}</p>
-        </div>
-
+      <div className="bg-background w-12 h-12 flex items-center justify-center rounded-lg">
+      <GoBackArrow />
+    </div>
         <div className="flex flex-wrap h-80">
           <div className="w-1/2 overflow-hidden h-full">
             <Image
               src={selectedDestination.mainimage}
               alt={selectedDestination.title}
               width={400}
-              height={300}
-              className="object-cover"
+              height={400}
             />
           </div>
-          <div className={`w-1/2 h-full grid grid-cols-${selectedDestination.images.length}`}>
-            {selectedDestination.images.map((image, index) => (
-              <div key={`image-${index}`} className="mb-4">
+          <div className="w-1/2 h-full grid grid-cols-2">
+            {selectedDestination.images.slice(0, 4).map((image, index) => (
+              <div key={`image-${index}`}>
                 <Image
                   src={image.image}
                   alt="Image"
-                  width={500}
-                  height={500}
-                  className="object-cover"
+                  width={100}
+                  height={100}
+                  className="w-full h-full"
                 />
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="mb-4">
+          <h1 className="text-2xl font-bold mb-2">{selectedDestination.title}</h1>
+          <p className="text-gray-700">{selectedDestination.description}</p>
         </div>
 
         <div className="mt-8">
@@ -82,7 +81,6 @@ const CardDetail = ({ id }) => {
             <p>No comments available</p>
           )}
         </div>
-      </div>
       </div>
     )}
   </div>

@@ -8,10 +8,10 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens: {
-      'xs': {'max': '639px'},
-      ...defaultTheme.screens,
-    },
+    // screens: {
+    //   'xs': {'max': '639px'},
+    //   ...defaultTheme.screens,
+    // },
       extend: {
         fontFamily: {
           'sans': ['Poppins', ...defaultTheme.fontFamily.sans],

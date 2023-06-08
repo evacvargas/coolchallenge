@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <>
     <SearchBar onSearch={handleSearch}/>
-      <div className="flex justify-center mt-10 my-10">
+      <div className="flex justify-center mt-20 my-10">
         <Button 
         text="Agrega nuevo destino"
         action={openModal}
