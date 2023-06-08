@@ -7,7 +7,7 @@ const Button = ({
   <button
     type="button"
     onClick={action}
-    className={classnames(`bg-${bgColor} text-${textColor} font-bold py-2 px-4 rounded`, {
+    className={classnames(`bg-${bgColor} text-${textColor} font-bold py-2 px-4 rounded hover:bg-hover hover:text-gray`, {
       "text-xs": size === 'sm',
       "text-xl": size === 'lg'
       })}>

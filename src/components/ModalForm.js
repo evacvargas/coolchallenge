@@ -37,7 +37,7 @@ const Modal = ({ isOpen, onClose }) => {
         method: 'POST',
         body: JSON.stringify(data)
       });
-  
+  //lo ideal es que esto se muestre en un toast
       if (response.ok) {
         setImages([])
         setName('')

@@ -23,7 +23,8 @@ module.exports = {
         background: "#e8e6e6",
         gray: "#1E232C",
         hover: "#f7e3df",
-        white: "#FFFFFF"
+        white: "#FFFFFF",
+        lightGray: "#969695",
       }
   },
   plugins: [],

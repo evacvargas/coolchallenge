@@ -6,10 +6,36 @@ import {BsSuitHeartFill} from "react-icons/bs";
 import {LuShare} from "react-icons/lu";
 import {BsFillStarFill} from "react-icons/bs"
 import Button from "./Button";
+import CommentsModal from "./CommentsModal";
 
 
 const CardDetail = ({ id }) => {
   const [selectedDestination, setSelectedDestination] = useState(null);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const stars = [];
+
+  const calcScore = ()=> {
+    if (selectedDestination?.score.length === 0) {
+      return 0;
+    }
+
+    let suma = 0;
+    for (let i = 0; i < selectedDestination?.score.length; i++) {
+      suma += selectedDestination?.score[i];
+    }
+
+    let promedio = suma / selectedDestination?.score.length;
+    return Math.round(promedio);
+  }
+
+  for (let i = 1; i <= 5; i++) {
+    if (i <= calcScore()) {
+      stars.push(<BsFillStarFill key={i} color="#CE452A" />);
+    } else {
+      stars.push(<BsFillStarFill key={i} color="#969695" />);
+    }
+  }
 
   const fetchDestinations = () => {
     return new Promise((resolve) => {
@@ -17,6 +43,14 @@ const CardDetail = ({ id }) => {
         resolve(data.destinations);
       }, 1000);
     });
+  };
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
   };
 
   useEffect(() => {
@@ -41,8 +75,7 @@ const CardDetail = ({ id }) => {
           <div className="flex gap-12">
             {selectedDestination?.score ? (
               <div className="flex items-center gap-3">
-                <BsFillStarFill />
-              <p className="text-2xl">{selectedDestination?.score}</p>
+                {stars}
               </div>
             ): null}
             {selectedDestination?.location ? (
@@ -50,7 +83,7 @@ const CardDetail = ({ id }) => {
             ): null}
           </div>
           <div className="flex items-center text-2xl gap-8">
-            <span className="flex items-center gap-3">
+            <span className="flex items-center gap-3 text-secondary">
               <BsSuitHeartFill/>
               Guarda
             </span>
@@ -79,6 +112,7 @@ const CardDetail = ({ id }) => {
                   width={500}
                   height={500}
                   className="w-full h-full object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33.3vw"
                 />
             ))}
           </div>
@@ -106,13 +140,15 @@ const CardDetail = ({ id }) => {
                     </div>
                   </div>
                   <p className="font-light text-gray mb-4">{comment.comment}</p>
+                </li>
+                ))}
                   <Button
+                  action={openModal}
                   bgColor="primary"
                   textColor="background"
                   text="Agrega un comentario"
                   />
-                </li>
-                ))}
+                  <CommentsModal isOpen={modalIsOpen} onClose={closeModal} id={selectedDestination?.id}/>
             </ul>
             ) : (
               <p className="font-light text-gray mb-4">No comments available</p>
