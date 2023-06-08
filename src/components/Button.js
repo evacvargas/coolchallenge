@@ -1,14 +1,18 @@
 import React from "react";
+import classnames from 'classnames';
 
 const Button = ({
-  action, text
+  action, text, size, bgColor, textColor
 }) => (
   <button
     type="button"
     onClick={action}
-    className="bg-primary w-56 p-4 h-14 rounded-md text-background hover:bg-hover hover:text-gray text-sm" 
-  >
+    className={classnames(`bg-${bgColor} text-${textColor} font-bold py-2 px-4 rounded`, {
+      "text-xs": size === 'sm',
+      "text-xl": size === 'lg'
+      })}>
     {text}
   </button>
 );
+
 export default Button;

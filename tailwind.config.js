@@ -22,8 +22,8 @@ module.exports = {
         secondary: "#109460",
         background: "#e8e6e6",
         gray: "#1E232C",
-        hover: "#f2cac2",
-        white: "FFFFFF"
+        hover: "#f7e3df",
+        white: "#FFFFFF"
       }
   },
   plugins: [],

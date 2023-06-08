@@ -2,7 +2,10 @@
 import Image from "next/image";
 import data from "../../data.json";
 import React, { useEffect, useState } from 'react';
-import GoBackArrow from "./GoBackArrow";
+import {BsSuitHeartFill} from "react-icons/bs";
+import {LuShare} from "react-icons/lu";
+import {BsFillStarFill} from "react-icons/bs"
+import Button from "./Button";
 
 
 const CardDetail = ({ id }) => {
@@ -31,59 +34,92 @@ const CardDetail = ({ id }) => {
   }, [id]);
 
   return (
-  <div className="flex flex-row justify-center gap-8 mt-9 px-5">
-    {selectedDestination && (
-      <div className="bg-background p-10 rounded-md shadow-lg">
-      <div className="bg-background w-12 h-12 flex items-center justify-center rounded-lg">
-      <GoBackArrow />
-    </div>
-        <div className="flex flex-wrap h-80">
-          <div className="w-1/2 overflow-hidden h-full">
-            <Image
-              src={selectedDestination.mainimage}
-              alt={selectedDestination.title}
-              width={400}
-              height={400}
-            />
-          </div>
-          <div className="w-1/2 h-full grid grid-cols-2">
-            {selectedDestination.images.slice(0, 4).map((image, index) => (
-              <div key={`image-${index}`}>
-                <Image
-                  src={image.image}
-                  alt="Image"
-                  width={100}
-                  height={100}
-                  className="w-full h-full"
-                />
+    <section className="max-w-[1240px] mx-auto py-16 px-4">
+      <div className="px-12 py-9">
+        <h1 className="text-4xl font-bold mb-3 text-gray">{selectedDestination?.title}</h1>
+        <div className="flex text-gray justify-between">
+          <div className="flex gap-12">
+            {selectedDestination?.score ? (
+              <div className="flex items-center gap-3">
+                <BsFillStarFill />
+              <p className="text-2xl">{selectedDestination?.score}</p>
               </div>
-            ))}
+            ): null}
+            {selectedDestination?.location ? (
+              <p className="text-2xl">{selectedDestination?.location}</p>
+            ): null}
           </div>
-        </div>
-
-        <div className="mb-4">
-          <h1 className="text-2xl font-bold mb-2">{selectedDestination.title}</h1>
-          <p className="text-gray-700">{selectedDestination.description}</p>
-        </div>
-
-        <div className="mt-8">
-          <h2 className="text-xl font-bold mb-2">Comments</h2>
-          {selectedDestination.comments && selectedDestination.comments.length > 0 ? (
-            <ul>
-              {selectedDestination.comments.map((comment, index) => (
-                <li key={`comment-${index}`} className="mb-4">
-                  <p className="font-bold">{comment.user}</p>
-                  <p>{comment.comment}</p>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>No comments available</p>
-          )}
+          <div className="flex items-center text-2xl gap-8">
+            <span className="flex items-center gap-3">
+              <BsSuitHeartFill/>
+              Guarda
+            </span>
+            <span className="flex items-center gap-3">
+              <LuShare/>
+              Comparte
+            </span>
+          </div>
         </div>
       </div>
-    )}
-  </div>
+
+      <div className="px-12">
+          <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4">
+            <Image
+              src={selectedDestination?.mainimage}
+              alt={selectedDestination?.title}
+              width={500}
+              height={500}
+              className="w-full h-full object-cover col-span-2 md:col-span-3 row-span-2"
+            />
+            {selectedDestination?.images.map((image, index) => (
+                <Image
+                  key={`image-${index}`}
+                  src={image?.image}
+                  alt="Image"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover"
+                />
+            ))}
+          </div>
+      </div>
+
+      <div className="px-12 py-9">
+        <div className="mt-8">
+          {selectedDestination?.comments && selectedDestination?.comments.length > 0 ? (
+            <ul className=" w-1/3">
+              {selectedDestination?.comments.map((comment, index) => (
+                <li key={`comment-${index}`} className="bg-white rounded-lg shadow-lg p-5 mb-3">
+                  <div className="flex gap-4 mb-4 items-center">
+                    <div>
+                      <Image
+                        src={selectedDestination?.profile}
+                        alt={"profile"}
+                        width={50}
+                        height={50}
+                        className="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div>
+                      <p className="font-bold">{comment.user}</p>
+                      <p>Junio 2023</p>
+                    </div>
+                  </div>
+                  <p className="font-light text-gray mb-4">{comment.comment}</p>
+                  <Button
+                  bgColor="primary"
+                  textColor="background"
+                  text="Agrega un comentario"
+                  />
+                </li>
+                ))}
+            </ul>
+            ) : (
+              <p className="font-light text-gray mb-4">No comments available</p>
+            )}
+          </div>
+      </div>
+    </section>
 );
 };
 

@@ -42,6 +42,8 @@ export default function Home() {
         <Button 
         text="Agrega nuevo destino"
         action={openModal}
+        bgColor="primary"
+        textColor="background"
         />
         <Modal isOpen={modalIsOpen} onClose={closeModal} />
       </div>

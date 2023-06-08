@@ -13,7 +13,8 @@ const CardsContainer = ({dest}) => {
             id={destination.id}
             image={destination.mainimage}
             title={destination.title}
-            description={destination.description}
+            score={destination.score}
+            direction={destination.direction}
           />
         ))}
       </div>

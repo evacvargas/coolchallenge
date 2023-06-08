@@ -5,7 +5,10 @@
       "title": "Jardin Japones",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry",
       "mainimage": "/jardinjapones.jpg",
+      "profile": "/profile.jpg",
       "category": "parque",
+      "location": "Buenos Aires, Argentina",
+      "direction": "Av. Casares 2966, Palermo.",
       "favorite": false,
       "score": [
         1,
@@ -40,8 +43,11 @@
       "title": "Caminito",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry",
       "mainimage": "/caminito.jpg",
+      "profile": "/profile.jpg",
       "score": 1,
       "category": "ciudad",
+      "location": "Buenos Aires, Argentina",
+      "direction": "Avenida Pedro de Mendoza 1929",
       "favorite": false,
       "comments": [
         {
@@ -70,8 +76,11 @@
       "title": "Cerro Campanario",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
       "mainimage": "/campanario.png",
+      "profile": "/profile.jpg",
       "score": 1,
       "category": "montana",
+      "location": "Bariloche, Argentina",
+      "direction": "Avenida Pedro de Mendoza 1929",
       "favorite": false,
       "comments": [
         {
@@ -100,8 +109,11 @@
       "title": "Tigre",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
       "mainimage": "/tigre.jpeg",
+      "profile": "/profile.jpg",
       "score": 1,
-      "category": "montana",
+      "category": "pueblo",
+      "location": "Buenos Aires, Argentina",
+      "direction": "Avenida Pedro de Mendoza 1929",
       "favorite": false,
       "comments": [
         {
@@ -130,8 +142,11 @@
       "title": "Canaima",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
       "mainimage": "/canaima.png",
+      "profile": "/profile.jpg",
       "score": 1,
       "category": "selva",
+      "location": "Amazonas, Venezuela",
+      "direction": "Avenida Pedro de Mendoza 1929",
       "favorite": false,
       "comments": [
         {
@@ -160,8 +175,11 @@
       "title": "Los Roques",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
       "mainimage": "/roques.jpeg",
+      "profile": "/profile.jpg",
       "score": 1,
       "category": "playa",
+      "location": "Dependencias Federales, Venezuela",
+      "direction": "Avenida Pedro de Mendoza 1929",
       "favorite": false,
       "comments": [
         {
@@ -190,8 +208,11 @@
       "title": "Fontana Di Trevi",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
       "mainimage": "/ditrevi.jpg",
+      "profile": "/profile.jpg",
       "score": 1,
       "category": "ciudad",
+      "location": "Roma, Italia",
+      "direction": "Avenida Pedro de Mendoza 1929",
       "favorite": false,
       "comments": [
         {
@@ -220,8 +241,11 @@
       "title": "Torre Eiffel",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
       "mainimage": "/paris.jpg",
+      "profile": "/profile.jpg",
       "score": 1,
       "category": "montana",
+      "location": "Paris, Francia",
+      "direction": "Avenida Pedro de Mendoza 1929",
       "favorite": false,
       "comments": [
         {
@@ -250,6 +274,9 @@
       "title": "London Eye",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry",
       "mainimage": "/london.jpg",
+      "location": "Londres, Inglaterra",
+      "direction": "Avenida Pedro de Mendoza 1929",
+      "profile": "/profile.jpg",
       "images": [
         {
           "image": "/london2jpg"
