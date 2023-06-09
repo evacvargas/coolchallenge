@@ -9,6 +9,8 @@ const Modal = ({ isOpen, onClose }) => {
   const [images, setImages] = useState([]);
   const [cost, setCost] = useState('');
   const [address, setAddress] = useState('');
+  const [category, setCategory] = useState('');
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,11 +27,13 @@ const Modal = ({ isOpen, onClose }) => {
       description,
       cost,
       address,
+      category,
       mainimage: fileArray[0]?.image,
       images: fileArray,
       score: [],
       comments: []
     }
+
     data.destinations.push(newDestination);
 
     saveDataToJson(data)
@@ -50,6 +54,7 @@ const Modal = ({ isOpen, onClose }) => {
         setDescription('');
         setCost('');
         setAddress('');
+        setCategory('');
       } else {
         console.error('Error al guardar los datos en el archivo JSON.');
       }
@@ -83,19 +88,25 @@ const Modal = ({ isOpen, onClose }) => {
               id="nombre"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full p-2 border-gray border rounded"
+              className="w-full p-2 border-gray border rounded focus:outline-primary"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="descripcion" className="block mb-1">
-              Descripción:
+            <label htmlFor="categoria" className="block mb-1">
+              Categoría:
             </label>
-            <textarea
-              id="descripcion"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
+            <select
+              id="categoria"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
               className="w-full p-2 border-gray border rounded"
-            />
+            >
+              <option value="">Selecciona una categoría</option>
+              <option value="selva">Selva</option>
+              <option value="montana">Montaña</option>
+              <option value="ciudad">Ciudad</option>
+              <option value="playa">Playa</option>
+            </select>
           </div>
           <div className="mb-4">
           <label htmlFor="direccion" className="block mb-1">
@@ -106,7 +117,7 @@ const Modal = ({ isOpen, onClose }) => {
               id="direccion"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
-              className="w-full p-2 border-gray border rounded"
+              className="w-full p-2 border-gray border rounded focus:outline-primary"
             />
           </div>
           <div className="mb-4">
@@ -118,7 +129,18 @@ const Modal = ({ isOpen, onClose }) => {
               id="cost"
               value={cost}
               onChange={(e) => setCost(e.target.value)}
-              className="w-full p-2 border-gray border rounded"
+              className="w-full p-2 border-gray border rounded focus:outline-primary"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="descripcion" className="block mb-1">
+              Descripción:
+            </label>
+            <textarea
+              id="descripcion"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              className="w-full p-2 border-gray border rounded focus:outline-primary"
             />
           </div>
           <div className="mb-4">
@@ -130,10 +152,9 @@ const Modal = ({ isOpen, onClose }) => {
               id="imagenes"
               onChange={(e) => setImages(e.target.files)}
               multiple
-              className="w-full p-2 border-gray border rounded"
+              className="w-full p-2 border-gray border rounded focus:outline-primary"
             />
           </div>
-
           <button
             type="submit"
             className="bg-primary hover:bg-hover hover:text-gray py-2 px-4 rounded text-background font-semibold"

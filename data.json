@@ -1,1 +1,348 @@
-{"destinations":[{"id":1,"title":"Jardin Japones","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry","mainimage":"/jardinjapones.jpg","profile":"/profile.jpg","category":"parque","location":"Buenos Aires, Argentina","address":"Av. Casares 2966, Palermo.","cost":100,"favorite":false,"score":[1,2,3,4,5],"comments":[{"user":"Eva","comment":"Bello"},{"user":"Eva Cristina","comment":"Amo Buenos Aires"},{"user":"Oscar Costero","comment":"Lo mejor de lo mejor."}],"images":[{"image":"/jardinjapones.jpg"},{"image":"/jardinjapones.jpg"},{"image":"/jardinjapones.jpg"}]},{"id":2,"title":"Caminito","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry","mainimage":"/caminito.jpg","profile":"/profile.jpg","score":[1,2,3,4,5],"category":"ciudad","location":"Buenos Aires, Argentina","address":"Avenida Pedro de Mendoza 1929","cost":250,"favorite":false,"comments":[{"user":"Eva","comment":"Lo mejor de buenos aires, volveria mil veces mas"},{"user":"Eva Cristina","comment":"Lo mejor de buenos aires, volveria mil veces mas"},{"user":"Eva Vargas","comment":"Todo genial!!!!"}],"images":[{"image":"/caminito.jpg"},{"image":"/caminito2.jpg"},{"image":"/caminito3.jpg"}]},{"id":3,"title":"Cerro Campanario","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry","mainimage":"/campanario.png","profile":"/profile.jpg","score":[1,2,3,4,5],"category":"montana","location":"Bariloche, Argentina","address":"Avenida Pedro de Mendoza 1929","cost":1500,"favorite":false,"comments":[{"user":"Paola","comment":"Lo mejor de Argentina, volveria mil veces mas"},{"user":"Cristina","comment":"Sublime"},{"user":"Evaluna Costero","comment":"Ame Bariloche y sin duda Cerro Campanario es de sus mejores destinos."}],"images":[{"image":"/campanario.png"},{"image":"/campanario.png"},{"image":"/campanario.png"}]},{"id":4,"title":"Tigre","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry","mainimage":"/tigre.jpeg","profile":"/profile.jpg","score":[1,2,3,4,5],"category":"pueblo","location":"Buenos Aires, Argentina","address":"Avenida Pedro de Mendoza 1929","cost":1200,"favorite":false,"comments":[{"user":"Enmanuel","comment":"Mi nuevo destino favorito"},{"user":"Evaluna","comment":"Hermoso en cualquier estacion"}],"images":[{"image":"/tigre.jpeg"},{"image":"/tigre.jpeg"},{"image":"/tigre.jpeg"}]},{"id":5,"title":"Canaima","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry","mainimage":"/canaima.png","profile":"/profile.jpg","score":[1,2,3,4,5],"category":"selva","location":"Amazonas, Venezuela","address":"Avenida Pedro de Mendoza 1929","cost":350,"favorite":false,"comments":[{"user":"Maria","comment":"Mi nuevo destino favorito"},{"user":"Sara","comment":"Imponente, la naturaleza me hizo volar"}],"images":[{"image":"/canaima.png"},{"image":"/canaima.png"},{"image":"/canaima.png"}]},{"id":6,"title":"Los Roques","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry","mainimage":"/roques.jpeg","profile":"/profile.jpg","score":[1,2,3,4,5],"category":"playa","location":"Dependencias Federales, Venezuela","address":"Avenida Pedro de Mendoza 1929","cost":1250,"favorite":false,"comments":[{"user":"Andrea","comment":"La mejor playa del universo"},{"user":"Oscar","comment":"Simplemente hermoso"},{"user":"oscar","comment":"test comment"}],"images":[{"image":"/roques.jpeg"},{"image":"/roques.jpeg"},{"image":"/roques.jpeg"}]},{"id":7,"title":"Fontana Di Trevi","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry","mainimage":"/ditrevi.jpg","profile":"/profile.jpg","score":[1,2,3,4,5],"category":"ciudad","location":"Roma, Italia","address":"Avenida Pedro de Mendoza 1929","cost":2100,"favorite":false,"comments":[{"user":"Ema","comment":"Mi nuevo destino favorito"},{"user":"Luna","comment":"Italia es espectacular"},{"user":"Norma Medina","comment":"Muy bonito!"}],"images":[{"image":"/ditrevi1.jpg"},{"image":"/ditrevi2.jpg"},{"image":"/ditrevi3.jpg"}]},{"id":8,"title":"Torre Eiffel","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry","mainimage":"/paris.jpg","profile":"/profile.jpg","score":[1,2,3,4,5],"category":"montana","location":"Paris, Francia","address":"Avenida Pedro de Mendoza 1929","cost":350,"favorite":false,"comments":[{"user":"Camila","comment":"Mi nuevo destino favorito"},{"user":"Evaluna","comment":"Romantica"}],"images":[{"image":"/paris1.jpg"},{"image":"/paris2.jpg"},{"image":"/paris2.jpg"}]},{"id":9,"title":"Plaza Serrano","description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ","cost":"15$","address":"Palermo Soho","images":[],"score":[],"comments":[]}]}
+{
+    "destinations": [
+        {
+            "id": 1,
+            "title": "Jardin Japones",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry",
+            "mainimage": "/jardinjapones.jpg",
+            "profile": "/profile.jpg",
+            "category": "ciudad",
+            "location": "Buenos Aires, Argentina",
+            "address": "Av. Casares 2966, Palermo.",
+            "cost": 100,
+            "favorite": false,
+            "score": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "comments": [
+                {
+                    "user": "Eva",
+                    "comment": "Bello"
+                },
+                {
+                    "user": "Eva Cristina",
+                    "comment": "Amo Buenos Aires"
+                },
+                {
+                    "user": "Oscar Costero",
+                    "comment": "Lo mejor de lo mejor."
+                }
+            ],
+            "images": [
+                {
+                    "image": "/jardinjapones.jpg"
+                },
+                {
+                    "image": "/jardinjapones.jpg"
+                },
+                {
+                    "image": "/jardinjapones.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Caminito",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry",
+            "mainimage": "/caminito.jpg",
+            "profile": "/profile.jpg",
+            "score": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "category": "ciudad",
+            "location": "Buenos Aires, Argentina",
+            "address": "Avenida Pedro de Mendoza 1929",
+            "cost": 250,
+            "favorite": false,
+            "comments": [
+                {
+                    "user": "Eva",
+                    "comment": "Lo mejor de buenos aires, volveria mil veces mas"
+                },
+                {
+                    "user": "Eva Cristina",
+                    "comment": "Lo mejor de buenos aires, volveria mil veces mas"
+                },
+                {
+                    "user": "Eva Vargas",
+                    "comment": "Todo genial!!!!"
+                }
+            ],
+            "images": [
+                {
+                    "image": "/caminito.jpg"
+                },
+                {
+                    "image": "/caminito2.jpg"
+                },
+                {
+                    "image": "/caminito3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Cerro Campanario",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "mainimage": "/campanario.png",
+            "profile": "/profile.jpg",
+            "score": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "category": "montana",
+            "location": "Bariloche, Argentina",
+            "address": "Avenida Pedro de Mendoza 1929",
+            "cost": 1500,
+            "favorite": false,
+            "comments": [
+                {
+                    "user": "Paola",
+                    "comment": "Lo mejor de Argentina, volveria mil veces mas"
+                },
+                {
+                    "user": "Cristina",
+                    "comment": "Sublime"
+                },
+                {
+                    "user": "Evaluna Costero",
+                    "comment": "Ame Bariloche y sin duda Cerro Campanario es de sus mejores destinos."
+                }
+            ],
+            "images": [
+                {
+                    "image": "/campanario.png"
+                },
+                {
+                    "image": "/campanario.png"
+                },
+                {
+                    "image": "/campanario.png"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Tigre",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "mainimage": "/tigre.jpeg",
+            "profile": "/profile.jpg",
+            "score": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "category": "ciudad",
+            "location": "Buenos Aires, Argentina",
+            "address": "Avenida Pedro de Mendoza 1929",
+            "cost": 1200,
+            "favorite": false,
+            "comments": [
+                {
+                    "user": "Enmanuel",
+                    "comment": "Mi nuevo destino favorito"
+                },
+                {
+                    "user": "Evaluna",
+                    "comment": "Hermoso en cualquier estacion"
+                }
+            ],
+            "images": [
+                {
+                    "image": "/tigre.jpeg"
+                },
+                {
+                    "image": "/tigre.jpeg"
+                },
+                {
+                    "image": "/tigre.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Canaima",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "mainimage": "/canaima.png",
+            "profile": "/profile.jpg",
+            "score": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "category": "selva",
+            "location": "Amazonas, Venezuela",
+            "address": "Avenida Pedro de Mendoza 1929",
+            "cost": 350,
+            "favorite": false,
+            "comments": [
+                {
+                    "user": "Maria",
+                    "comment": "Mi nuevo destino favorito"
+                },
+                {
+                    "user": "Sara",
+                    "comment": "Imponente, la naturaleza me hizo volar"
+                }
+            ],
+            "images": [
+                {
+                    "image": "/canaima.png"
+                },
+                {
+                    "image": "/canaima.png"
+                },
+                {
+                    "image": "/canaima.png"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Los Roques",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "mainimage": "/roques.jpeg",
+            "profile": "/profile.jpg",
+            "score": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "category": "playa",
+            "location": "Dependencias Federales, Venezuela",
+            "address": "Avenida Pedro de Mendoza 1929",
+            "cost": 1250,
+            "favorite": false,
+            "comments": [
+                {
+                    "user": "Andrea",
+                    "comment": "La mejor playa del universo"
+                },
+                {
+                    "user": "Oscar",
+                    "comment": "Simplemente hermoso"
+                },
+                {
+                    "user": "oscar",
+                    "comment": "test comment"
+                },
+                {
+                    "user": "Valentina",
+                    "comment": "Un paraiso!"
+                }
+            ],
+            "images": [
+                {
+                    "image": "/roques.jpeg"
+                },
+                {
+                    "image": "/roques.jpeg"
+                },
+                {
+                    "image": "/roques.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Fontana Di Trevi",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "mainimage": "/ditrevi.jpg",
+            "profile": "/profile.jpg",
+            "score": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "category": "ciudad",
+            "location": "Roma, Italia",
+            "address": "Avenida Pedro de Mendoza 1929",
+            "cost": 2100,
+            "favorite": false,
+            "comments": [
+                {
+                    "user": "Ema",
+                    "comment": "Mi nuevo destino favorito"
+                },
+                {
+                    "user": "Luna",
+                    "comment": "Italia es espectacular"
+                },
+                {
+                    "user": "Norma Medina",
+                    "comment": "Muy bonito!"
+                }
+            ],
+            "images": [
+                {
+                    "image": "/ditrevi1.jpg"
+                },
+                {
+                    "image": "/ditrevi2.jpg"
+                },
+                {
+                    "image": "/ditrevi3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Torre Eiffel",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "mainimage": "/paris.jpg",
+            "profile": "/profile.jpg",
+            "score": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "category": "ciudad",
+            "location": "Paris, Francia",
+            "address": "Avenida Pedro de Mendoza 1929",
+            "cost": 350,
+            "favorite": false,
+            "comments": [
+                {
+                    "user": "Camila",
+                    "comment": "Mi nuevo destino favorito"
+                },
+                {
+                    "user": "Evaluna",
+                    "comment": "Romantica"
+                }
+            ],
+            "images": [
+                {
+                    "image": "/paris1.jpg"
+                },
+                {
+                    "image": "/paris2.jpg"
+                },
+                {
+                    "image": "/paris2.jpg"
+                }
+            ]
+        }
+    ]
+}

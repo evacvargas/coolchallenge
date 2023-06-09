@@ -10,6 +10,7 @@ import CategoryFilter from "@/components/CategoryFilter";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [filterReset, setfilterReset] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [destinations, setDestinations] = useState(data.destinations);
 
@@ -36,6 +37,19 @@ export default function Home() {
     }
   };
 
+  const handleFilter = (filter) => {
+      const filteredDestinations = data.destinations.filter((destination) =>
+      destination.category.toLowerCase().includes(filter.toLowerCase())
+    );
+    setDestinations(filteredDestinations);
+    setfilterReset(true)
+  };
+  const handleResetFilter = () => {
+    setDestinations(data.destinations);
+    setfilterReset(false)
+  }
+
+
   return (
     <>
     <SearchBar onSearch={handleSearch}/>
@@ -49,11 +63,21 @@ export default function Home() {
         <Modal isOpen={modalIsOpen} onClose={closeModal} />
       </div>
       <div className="py-10 px-12">
-        <CategoryFilter/>
+        <CategoryFilter handleFilter={handleFilter}/>
       </div>
       <div className="py-10 px-12">
         <CardsContainer dest={destinations}/>
       </div>
+      {filterReset ? (
+      <div className="py-10 px-12">
+        <Button
+        action={handleResetFilter}
+        bgColor="primary"
+        text="Limpiar"
+        textColor="white"
+        />
+      </div>
+      ): null}
     </>
   )
 }

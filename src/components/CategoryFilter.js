@@ -5,21 +5,40 @@ import {FaMountain} from "react-icons/fa";
 import {GiJungle} from "react-icons/gi";
 import {FaCity} from "react-icons/fa";
 
-const CategoryFilter = () => {
-//Opcionales: Este es el componente que filtra por categorias
+const CategoryFilter = ({ handleFilter }) => {
   return (
-      <div className="flex justify-between">
-        <div>
-          <FaUmbrellaBeach size="5rem" className="text-secondary"/>
+      <div className="flex flex-wrap justify-between">
+        <div className="cursor-pointer hover:bg-transparent transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg rounded-lg p-3">
+          <FaUmbrellaBeach
+            size="5rem"
+            className="text-secondary"
+            onClick={() => handleFilter('playa')}
+          />
+          <h2 className="text-secondary font-semibold text-center">Playa</h2>
         </div>
-        <div>
-          <FaMountain size="5rem" className="text-secondary"/>
+        <div className="cursor-pointer hover:bg-transparent transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg rounded-lg p-3">
+          <FaMountain
+            size="5rem"
+            className="text-secondary"
+            onClick={() => handleFilter('montana')}
+            />
+            <h2 className="text-secondary font-semibold text-center">Montaña</h2>
         </div>
-        <div>
-          <GiJungle size="5rem" className="text-secondary"/>
+        <div className="cursor-pointer hover:bg-transparent transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg rounded-lg p-3">
+          <GiJungle
+            size="5rem"
+            className="text-secondary"
+            onClick={() => handleFilter('selva')}
+          />
+          <h2 className="text-secondary font-semibold text-center">Selva</h2>
         </div>
-        <div>
-          <FaCity size="5rem" className="text-secondary"/>
+        <div className="cursor-pointer hover:bg-transparent transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg rounded-lg p-3">
+          <FaCity
+            size="5rem"
+            className="text-secondary text-center"
+            onClick={() => handleFilter('ciudad')}
+          />
+          <h2 className="text-secondary font-semibold text-center">Ciudad</h2>
         </div>
       </div>
   );

@@ -14,7 +14,7 @@ const Nav = () => {
         height={100}
         style={{ width: "50px", height: "auto" }} />
         </Link>
-        <div className="flex gap-9 text-primary font-semibold items-center">
+        <div className="flex gap-9 xs:gap-5 text-primary font-semibold items-center">
           <p className="hover:text-secondary cursor-pointer">Home</p>
           <p className="hover:text-secondary cursor-pointer">About</p>
           <p className="hover:text-secondary cursor-pointer">Blog</p>
