@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Wallpaper from './../../public/Wallpaper.jpg'
+import Wallpaper from '../../public/Wallpaper.jpg'
 import { BsSearch } from 'react-icons/bs';
 
 const SearchBar = ({ onSearch, searchTerm }) => {
