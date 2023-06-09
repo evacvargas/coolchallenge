@@ -38,6 +38,7 @@ const Cards = ({
       className="bg-white rounded-lg shadow-lg flex flex-col hover:bg-hover transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"  
       role="button"
       >
+      {image ? (
         <div className="relative h-60 w-full">
           <Image 
           src={image}
@@ -52,6 +53,7 @@ const Cards = ({
               />
           </div>
         </div>
+      ): <div className="relative h-60 w-full bg-primary rounded-t-lg"/>}
         <div className="flex justify-between p-3 items-center text-gray font-semibold">
           <p className="text-2xl">
             {title}

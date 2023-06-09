@@ -16,6 +16,7 @@ const CardDetail = ({ id }) => {
   const stars = [];
 
   const calcScore = ()=> {
+
     if (selectedDestination?.score.length === 0) {
       return 0;
     }
@@ -96,7 +97,8 @@ const CardDetail = ({ id }) => {
       </div>
 
       <div className="px-12">
-          <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4">
+        <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4">
+          {selectedDestination?.mainimage ? (
             <Image
               src={selectedDestination?.mainimage}
               alt={selectedDestination?.title}
@@ -104,16 +106,19 @@ const CardDetail = ({ id }) => {
               height={500}
               className="w-full h-full object-cover col-span-2 md:col-span-3 row-span-2"
             />
-            {selectedDestination?.images.map((image, index) => (
-                <Image
-                  key={`image-${index}`}
-                  src={image?.image}
-                  alt="Image"
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33.3vw"
-                />
+          ): <div>
+            No hay imagenes disponibles
+            </div>}
+        {selectedDestination?.images.map((image, index) => (
+          <Image
+            key={`image-${index}`}
+            src={image?.image}
+            alt="Image"
+            width={500}
+            height={500}
+            className="w-full h-full object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33.3vw"
+            />
             ))}
           </div>
       </div>
@@ -151,7 +156,7 @@ const CardDetail = ({ id }) => {
                   <CommentsModal isOpen={modalIsOpen} onClose={closeModal} id={selectedDestination?.id}/>
             </ul>
             ) : (
-              <p className="font-light text-gray mb-4">No comments available</p>
+              <p className="font-light text-gray mb-4">No hay comentarios para este destino</p>
             )}
           </div>
       </div>

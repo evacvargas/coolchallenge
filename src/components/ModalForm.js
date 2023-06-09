@@ -26,7 +26,9 @@ const Modal = ({ isOpen, onClose }) => {
       cost,
       address,
       mainimage: fileArray[0]?.image,
-      images: fileArray
+      images: fileArray,
+      score: [],
+      comments: []
     }
     data.destinations.push(newDestination);
 
