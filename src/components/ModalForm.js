@@ -141,7 +141,9 @@ const Modal = ({ isOpen, onClose }) => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               className="w-full p-2 border-gray border rounded focus:outline-primary"
+              maxLength={300}
             />
+            <p className="text-xs text-gray">{description.length}/300 caracteres</p>
           </div>
           <div className="mb-4">
             <label htmlFor="imagenes" className="block mb-1">
