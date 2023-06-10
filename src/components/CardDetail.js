@@ -71,33 +71,31 @@ const CardDetail = ({ id }) => {
   return (
     <section className="max-w-[1240px] mx-auto py-16 px-4">
       <div className="px-12 py-9">
-        <h1 className="text-4xl font-bold mb-3 text-gray">{selectedDestination?.title}</h1>
-        <div className="flex text-gray justify-between">
-          <div className="flex gap-12">
+        <h1 className="text-4xl xs:text-2xl font-bold mb-3 text-gray">{selectedDestination?.title}</h1>
+        <div className="flex text-gray justify-between flex-wrap xs:gap-2">
+          <div className="flex gap-12 xs:gap-5 flex-wrap">
             {selectedDestination?.score ? (
               <div className="flex items-center gap-3">
                 {stars}
               </div>
             ): null}
             {selectedDestination?.location ? (
-              <p className="text-2xl">{selectedDestination?.location}</p>
+              <p className="text-2xl xs:text-base overflow-clip">{selectedDestination?.location}</p>
             ): null}
           </div>
-          <div className="flex items-center text-2xl gap-8">
+          <div className="flex items-center text-2xl gap-8 xs:text-base">
             <span className="flex items-center gap-3 text-secondary">
               <BsSuitHeartFill/>
-              Guarda
             </span>
             <span className="flex items-center gap-3">
               <LuShare/>
-              Comparte
             </span>
           </div>
         </div>
       </div>
 
       <div className="px-12">
-        <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4">
+        <div className="grid grid-rows-none md:grid-cols-5 py-4 xs:pt-0 gap-2 md:gap-4">
           {selectedDestination?.mainimage ? (
             <Image
               src={selectedDestination?.mainimage}
@@ -124,9 +122,9 @@ const CardDetail = ({ id }) => {
       </div>
 
       <div className="px-12 py-9">
-        <div className="mt-8">
+        <div className="mt-8 xs:mt-0">
           {selectedDestination?.comments && selectedDestination?.comments.length > 0 ? (
-            <ul className=" w-1/3">
+            <ul className="w-1/3 xs:w-full">
               {selectedDestination?.comments.map((comment, index) => (
                 <li key={`comment-${index}`} className="bg-white rounded-lg shadow-lg p-5 mb-3">
                   <div className="flex gap-4 mb-4 items-center">
