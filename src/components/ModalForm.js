@@ -68,7 +68,7 @@ const Modal = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="absolute w-full bg-gray bg-opacity-30 h-full backdrop-blur z-1"/>
-      <div className="bg-background border border-gray p-5 rounded-lg z-50">
+      <div className="bg-background border border-gray p-5 rounded-lg z-50 absolute top-8 max-h-screen overflow-auto">
         <div className="flex justify-between mb-4">
           <h2 className="text-lg font-bold text-gray">Agrega tu destino</h2>
           <button
